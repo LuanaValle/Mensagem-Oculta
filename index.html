@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoder</title>
+    <link rel="stylesheet" href="./css/encoder.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Audiowide&family=Comforter+Brush&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        
+        <div class="form">
+        <h1>Encoding</h1>
+        <h3>Digite a mensagem</h3>
+        <input id="texto" type="textarea">
+        <div class="select">
+            <select id="codigos">
+                <option value="cifra">Cifra de César</option>
+                <option value="base">Base 64</option>
+            </select>
+        </div>
+        <div class="passo">
+            <label for="passo">Escolha o passo</label>
+            <input id="passo" type="number" min="1" max="25"/>
+        </div>
+        <div class="codificar">
+            <input type="radio" name="radiobutton" value="codificar"/> Codificar
+        </div>
+        <div class="decodificar">
+            <input type="radio" name="radiobutton" value="decodificar"/> Decodificar
+        </div>
+        <p id="resultado" type="text"></p>
+        <button>(DE)CODIFICAR</button>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="./javascript/encoder.js"></script>
+</body>
+</html> 
